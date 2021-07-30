@@ -1,25 +1,25 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.NumbersColelction = void 0;
-var NumbersColelction = /** @class */ (function () {
-    function NumbersColelction(data) {
+exports.NumbersCollection = void 0;
+var NumbersCollection = /** @class */ (function () {
+    function NumbersCollection(data) {
         this.data = data;
     }
-    Object.defineProperty(NumbersColelction.prototype, "length", {
+    Object.defineProperty(NumbersCollection.prototype, "length", {
         get: function () {
             return this.data.length;
         },
         enumerable: false,
         configurable: true
     });
-    NumbersColelction.prototype.compare = function (left, right) {
+    NumbersCollection.prototype.compare = function (left, right) {
         return this.data[left] > this.data[right];
     };
-    NumbersColelction.prototype.swap = function (left, right) {
+    NumbersCollection.prototype.swap = function (left, right) {
         var temp = this.data[left];
         this.data[left] = this.data[right];
         this.data[right] = temp;
     };
-    return NumbersColelction;
+    return NumbersCollection;
 }());
-exports.NumbersColelction = NumbersColelction;
+exports.NumbersCollection = NumbersCollection;
